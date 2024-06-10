@@ -1,0 +1,50 @@
+.table-header {
+	
+/* 	Flexbox with spaced components */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+/*     Header will be on top always */
+    width: 100%;
+    height: 60px;
+    
+    overflow: hidden;
+    
+}
+
+.table-right {
+  margin-left: auto;
+}
+
+	
+.table-search { 
+	overflow: hidden;
+	margin-left: 5px;
+/* 	min-width: 120px;	 */
+}
+
+vaadin-split-layout[theme~="hide-split"]::part(splitter) {
+	  display: none;
+	}
+
+
+@media (width < 1200px) {
+	
+	.table-search { 
+		display: none;
+	}
+	
+	.table-search { 
+		display: none;
+	}
+	
+	.hiddable-on-phone {
+		display: none;
+	}
+	
+	vaadin-split-layout[theme~="hiddable-split-on-phone"]::part(splitter) {
+	  display: none;
+	}
+	
+}

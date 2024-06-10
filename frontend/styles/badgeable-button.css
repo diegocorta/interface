@@ -1,0 +1,17 @@
+
+.badge {
+    background-color: var(--lumo-error-color);
+    color: var(--lumo-primary-text-color);
+    border-radius: 50%; /* Para hacer una forma circular */
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

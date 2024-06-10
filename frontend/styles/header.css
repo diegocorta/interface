@@ -1,0 +1,59 @@
+.header-custom {
+	
+/* 	Flexbox with spaced components */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+/*     Header will be on top always */
+    width: 100%;
+    height: 60px;
+}
+
+.header-avatar {
+	height: 40px;
+	width: 40px;
+	padding: 5px;
+}
+
+@media (width < 600px ) {
+	
+	.header-avatar-name { 
+		display: none;
+	}
+	
+	.header-toogle-dark {
+		display: none;
+	}
+	
+	.settings-menu {
+		width: 50px;
+	}
+	
+}
+
+@media (600px <= width <= 1200px) {
+	
+	.settings-menu {
+		width: 15vw;
+	}
+	
+}
+
+@media (width >= 1200px ) {
+	
+	.settings-menu {
+		width: 30vw;
+	}
+	
+}
+
+/* Estilo personalizado para los menús contextuales en dispositivos móviles */
+@media (width < 600px ) {
+	vaadin-context-menu-list-box {
+	    padding: 20px 0px; /* Ajusta esta propiedad según sea necesario */
+	}
+}
+
+
+

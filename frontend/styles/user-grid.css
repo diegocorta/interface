@@ -1,0 +1,53 @@
+.data1 { grid-area: data1; }
+.data2 { grid-area: data2; }
+.data3 { grid-area: data3; }
+
+.container-user {
+	display: grid;
+	gap: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 25px auto;
+	
+	grid-template-areas:
+	    'data2 data2'
+	    'data1 data3';
+}
+
+.gridcontainer-user {
+	container-type: inline-size;
+	container-name: test;
+}
+
+.data1 {
+/* 	width: 100px; */
+/* 	height: 100px; */
+	width: 11vw;
+	height: 11vw;
+	
+	min-width: 100px;
+	min-height: 100px;
+}
+
+.data2 {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+vaadin-message > vaadin-avatar {
+	display: none;
+}
+
+vaadin-message {
+	margin: 5px 10px 5px 0px;
+	padding: 0px 5px;
+	background-color: var(--lumo-base-color);
+}
+
+
+
+.data {
+	color: var(--lumo-body-text-color);
+}

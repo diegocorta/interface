@@ -1,0 +1,12 @@
+vaadin-menu-bar-button {
+	min-width: 0;
+	padding: 10px;
+}
+
+.light-chip .fc-event-title {
+	color: hsla(214, 40%, 16%, 0.94);
+}
+
+.dark-chip .fc-event-title {
+	color: hsla(214, 96%, 96%, 0.9);
+}

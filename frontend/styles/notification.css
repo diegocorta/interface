@@ -1,0 +1,19 @@
+@media (width <= 600px) {
+	vaadin-notification-card.size {
+		
+		width: calc(100vw - 16px);
+        margin: 8px;
+        margin-bottom: 25px;
+        padding: 0;
+        display: flex;
+        
+	}
+}
+
+@media (600px <= width <= 1200px) {
+	
+	vaadin-notification-card.size { 
+		min-width: 60vw;
+	}
+	
+}
